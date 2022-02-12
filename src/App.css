@@ -1,38 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Serif+Pro&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  display:flex;
+  height: 100vh;
   flex-direction: column;
-  align-items: center;
+  background-color: #7fffd4;
+  color: #85283f;
+  font-family: "Source Serif Pro", serif;
+}
+
+h1 {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Source Serif Pro", serif;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputs {
+  height: 200px;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputs input {
+  width: 200px;
+  height: 25px;
+  font-size: 1  em;
+  margin: 10px;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.inputs button {
+  margin-top: 10px;
+  border: none;
+  width: 150px;
+  height: 25px;
+  background-color: white;
+  border-radius: 10px;
+  font-family: "Source Serif Pro", serif;
+  color:#85283f;
+  font-size: 1em;
+  
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+tr {
+  display: table-cell;
+}
+
+table {
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.taskContainer button {
+  width: 100px;
+  height: 5em;
+  border: 2px solid pink;
+  font-family: 'Montserrat', sans-serif;
+}
+
+th, td {
+  font-size: 1em;
+  width: 100px;
+  padding-right: 50px;
+  padding-left: 50px;
+  outline: 2px solid white;
+}
+
+td {
+  min-height: 100px;
+  max-width: 100px;
+  overflow: hidden;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+
+table tr {
+  background-color: lavender;
+}
+
+th {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
